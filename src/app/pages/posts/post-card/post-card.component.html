@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+
+    <!-- Open Closed Principle, This component code is not modified to show additional details within this component
+    This component is extended with another component to show additional details of post -->
+    <button class="show-more-btn" (click)="showMore = !showMore">
+        {{ showMore ? 'Hide Details' : 'Show more details' }}
+    </button>
+    <app-more-details *ngIf="showMore" [post]="post"></app-more-details>
+</div>

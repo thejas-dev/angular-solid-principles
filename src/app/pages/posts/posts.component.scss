@@ -1,0 +1,10 @@
+
+/* Flex container */
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping of cards to the next row */
+  gap: 20px; /* Space between the cards */
+  padding: 20px;
+  justify-content: space-between; /* Distribute the cards evenly */
+}

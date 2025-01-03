@@ -1,0 +1,12 @@
+.posts-filter-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .filter-input {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: medium;
+    }
+}

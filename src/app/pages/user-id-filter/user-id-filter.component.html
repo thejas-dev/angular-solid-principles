@@ -1,0 +1,6 @@
+<div class="posts-filter-container">
+    <h3>Filter By User Ids</h3>
+    <select id="filter" name="filter" class="filter-input" (change)="handleIdChange($event)" >
+        <option *ngFor="let id of userService.userIds" [value]="id">{{id}}</option>
+    </select>
+</div>

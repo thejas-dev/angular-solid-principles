@@ -1,0 +1,22 @@
+
+
+
+
+<div *ngIf="postsService.posts.length === 0">
+    No posts found.
+
+    <button (click)="fetchPosts()">Fetch Posts</button>
+</div>
+    
+
+<div class="posts-container">
+    <div *ngIf="postsService.posts.length > 0; else noPosts">
+        <div *ngFor="let post of postsService.posts">
+            <app-post-card [post]="post" ></app-post-card>
+        </div>
+    </div>
+    <ng-template #noPosts>
+        <p>No posts available.</p>
+    </ng-template>
+</div>
+
